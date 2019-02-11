@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Welcome to my page!
 
-You can use the [editor on GitHub](https://github.com/RiverMatt/rivermatt.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![LX470](https://puu.sh/CKqm4/b86af29c8b.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am a Biology major/CS minor student at BSU. I will be graduating in May 2019. I love programming and the outdoors, and want a career that combines the two. My dream job is building hardware and software solutions for biological research and deploying it in the field.
 
-### Markdown
+### Here is a small snippet of code from one of my projects to test the syntax highlighting
+```Java
+try (BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()))) {
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  boolean found = true;
+  for (input = br.readLine(); input != null && found; input = br.readLine()) {
+    if (input.contains("[")) {
+      int posBracket = input.indexOf('[');
+      int posPercent = input.indexOf('%', posBracket + 1);
+      inputParsed = input.substring(posBracket + 1, posPercent);
+      volInitParsed = Integer.parseInt(inputParsed);
+      found = false;
+    }
+  }
+}
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RiverMatt/rivermatt.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
